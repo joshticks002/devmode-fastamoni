@@ -14,6 +14,7 @@ import { logout } from "@/reduxfile/redux/auth/slices";
 import { RootState } from "@/store/store";
 
 import { profileNavigation } from "./data/data";
+import { windowWidth } from "@/utils/dimensions";
 
 const ProfileScreen = ({ navigation }: AppNavScreenProps<"DashboardTab">) => {
   const bottomSheetRef = useRef<BottomSheetModal>(null);
@@ -91,7 +92,7 @@ const ProfileScreen = ({ navigation }: AppNavScreenProps<"DashboardTab">) => {
                   justifyContent="center"
                   marginVertical="md"
                   onPress={handleOpenModal}
-                  width={360}
+                  width={windowWidth * 0.75}
                 >
                   <Text
                     color="white"
@@ -111,7 +112,6 @@ const ProfileScreen = ({ navigation }: AppNavScreenProps<"DashboardTab">) => {
           handleClose={handleCloseModal}
           onProceed={() => {
             dispatch(logout());
-            // navigation.navigate("Onboarding");
             navigation.reset({
               index: 0,
               routes: [{ name: "Onboarding" }],

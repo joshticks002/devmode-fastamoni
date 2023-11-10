@@ -22,6 +22,7 @@ import { useUpdateProfileMutation } from "@/reduxfile/redux/updateProfile/servic
 import { RootState } from "@/store/store";
 
 import { UpdateProfile, UpdateProfileInitValues } from "./types/profileTypes";
+import { windowWidth } from "@/utils/dimensions";
 
 const PersonalDataScreen = ({ navigation }) => {
   const jobs = [
@@ -217,6 +218,7 @@ const PersonalDataScreen = ({ navigation }) => {
             label="Update"
             loadingText="Updating profile..."
             onPress={triggerUpdateProfile}
+            width={windowWidth * 0.85}
           />
           <Toast />
         </ScrollView>

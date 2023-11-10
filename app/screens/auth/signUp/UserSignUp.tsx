@@ -175,6 +175,7 @@ const UserSignUp = ({ navigation }) => {
             label="Register"
             loadingText="Creating account..."
             onPress={handleSubmit}
+            width="95%"
           />
           <Box height={60} />
           <Text textAlign="center" variant="subHeading">

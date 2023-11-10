@@ -5,6 +5,7 @@ import Toast from "react-native-toast-message";
 import { Box, Button, Text } from "@/components/";
 import TextInput from "@/components/TextInput";
 import TitleComponent from "@/components/TitleComponent/TitleComponent";
+import { windowWidth } from "@/utils/dimensions";
 
 const ResetPin = ({ navigation }) => {
   const [getEmail, setGetEmail] = useState<string>("");
@@ -64,6 +65,7 @@ const ResetPin = ({ navigation }) => {
             label="Continue"
             loadingText="Processing request..."
             onPress={handleOtpTrigger}
+            width={windowWidth * 0.85}
           />
         </Box>
       </Box>

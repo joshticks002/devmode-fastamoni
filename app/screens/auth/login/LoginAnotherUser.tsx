@@ -18,6 +18,7 @@ import TitleComponent from "@/components/TitleComponent/TitleComponent";
 import { useLoginMutation } from "@/reduxfile/redux/auth/service";
 import { setUserData } from "@/reduxfile/redux/auth/slices";
 import { capitalizeFirstLetter } from "@/utils/nameFormatter";
+import { windowWidth } from "@/utils/dimensions";
 
 type MyFormValues = {
   email: string;
@@ -192,6 +193,7 @@ const LoginOtherAccounts = ({ navigation }) => {
               label="Login"
               loadingText="Logging in..."
               onPress={handleSubmit}
+              width={windowWidth * 0.85}
             />
           </Box>
 

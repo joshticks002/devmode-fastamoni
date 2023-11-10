@@ -22,7 +22,7 @@ export const FrequentTransactionList = ({
     borderWidth={0.5}
     flexDirection="row"
     key={item.id}
-    marginBottom="xs"
+    marginBottom="md"
     padding="md"
     width="100%"
   >

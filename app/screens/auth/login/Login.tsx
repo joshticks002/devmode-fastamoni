@@ -20,6 +20,7 @@ import { useLoginMutation } from "@/reduxfile/redux/auth/service";
 import { setUserData } from "@/reduxfile/redux/auth/slices";
 import { RootState } from "@/store/store";
 import { capitalizeFirstLetter } from "@/utils/nameFormatter";
+import { windowWidth } from "@/utils/dimensions";
 
 type MyFormValues = {
   email: string;
@@ -300,6 +301,7 @@ const Login = ({ navigation }) => {
                     label="Login"
                     loadingText="Logging in..."
                     onPress={handleSubmit}
+                    width={windowWidth * 0.85}
                   />
                 </Box>
 
@@ -356,8 +358,9 @@ const Login = ({ navigation }) => {
               />
             </Box>
             <Box
+              alignItems="center"
               flexDirection="row"
-              justifyContent="space-between"
+              justifyContent="center"
               marginHorizontal="md"
               marginTop="xs"
             >
@@ -383,6 +386,7 @@ const Login = ({ navigation }) => {
                 label="Login"
                 loadingText="Logging in..."
                 onPress={handleWelcomeBack}
+                width={windowWidth * 0.85}
               />
             </Box>
 

@@ -25,7 +25,7 @@
         "foregroundImage": "./app/assets/images/splash.png",
         "backgroundColor": "#0088CC"
       },
-      "package": ""
+      "package": "com.joshticks002.devmodefastamoni"
     },
     "web": {
       "favicon": "./app/assets/images/applogo.png"
