@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import { Box, Button, Icon, Text } from "@/components/";
 import BlurryBottomContainer from "@/components/BlurryBottomContainer";
+import { windowWidth } from "@/utils/dimensions";
 
 const PersonalDataSuccess = ({ navigation }) => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const PersonalDataSuccess = ({ navigation }) => {
         <Button
           label="Okay"
           onPress={() => navigation.navigate("ProfileScreen")}
+          width={windowWidth * 0.85}
         />
       </Box>
     </BlurryBottomContainer>
