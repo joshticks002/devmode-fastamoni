@@ -259,7 +259,7 @@ const Login = ({ navigation }) => {
                   justifyContent="center"
                   marginBottom="lg"
                 >
-                  <Image height={250} source={loginimg} width={250} />
+                  <Image height={150} source={loginimg} width={150} />
                 </Box>
                 <EyeTextInput
                   labelText="Email address"
