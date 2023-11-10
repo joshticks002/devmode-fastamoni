@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "fastamoni",
-    "slug": "fastamoni",
+    "slug": "devmode-fastamoni",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/images/splash.png",
@@ -14,7 +14,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -30,9 +32,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "c96ba616-22dd-4b42-a080-832d52042fcd"
+        "projectId": "c8601686-597f-4bd4-b406-91cc5e1dec7c"
       }
     },
-    "owner": "joshticks"
+    "owner": "joshticks002"
   }
 }
