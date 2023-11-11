@@ -68,7 +68,7 @@ const theme = createTheme({
       color: "textColorTint",
       fontFamily: "harmonia-rg",
       fontSize: 16,
-      fontWeight: "400",
+      fontWeight: "600",
       lineHeight: 20,
     },
     button: {

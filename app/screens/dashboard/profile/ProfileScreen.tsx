@@ -12,9 +12,9 @@ import TitleComponent from "@/components/TitleComponent/TitleComponent";
 import { AppNavScreenProps } from "@/navigation/index";
 import { logout } from "@/reduxfile/redux/auth/slices";
 import { RootState } from "@/store/store";
+import { windowWidth } from "@/utils/dimensions";
 
 import { profileNavigation } from "./data/data";
-import { windowWidth } from "@/utils/dimensions";
 
 const ProfileScreen = ({ navigation }: AppNavScreenProps<"DashboardTab">) => {
   const bottomSheetRef = useRef<BottomSheetModal>(null);

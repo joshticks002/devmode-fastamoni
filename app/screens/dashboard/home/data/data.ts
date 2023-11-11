@@ -77,11 +77,11 @@ export const images = [
     title: "First Image",
   },
   {
-    image: require("../../../../assets/images/adFastamoni.png"),
+    image: require("../../../../assets/images/credit-card.png"),
     title: "Second Image",
   },
   {
-    image: require("../../../../assets/images/advertFastamoni.png"),
+    image: require("../../../../assets/images/fasta.png"),
     title: "Third Image",
   },
 ];

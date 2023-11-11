@@ -132,7 +132,7 @@ const HomeDashboard = ({ navigation, route }) => {
                 loop
                 mode="parallax"
                 modeConfig={{
-                  parallaxScrollingOffset: 50,
+                  parallaxScrollingOffset: 20,
                   parallaxScrollingScale: 0.9,
                 }}
                 renderItem={renderItem}

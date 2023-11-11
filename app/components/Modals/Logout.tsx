@@ -5,6 +5,8 @@ import {
 } from "@gorhom/bottom-sheet";
 import React, { RefObject, useMemo } from "react";
 
+import { windowWidth } from "@/utils/dimensions";
+
 import Box from "../Box";
 import Button from "../Button";
 import Text from "../Text";
@@ -45,6 +47,7 @@ const LogoutModal = (props: OtpModalProps) => {
               onPress={() => {
                 onProceed();
               }}
+              width={windowWidth * 0.85}
             />
             <Box height={20} />
             <Button
@@ -52,6 +55,7 @@ const LogoutModal = (props: OtpModalProps) => {
               onPress={() => {
                 handleClose();
               }}
+              width={windowWidth * 0.85}
             />
           </Box>
         </Box>

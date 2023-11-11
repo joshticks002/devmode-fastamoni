@@ -8,7 +8,7 @@
 import * as FileSystem from "expo-file-system";
 import * as ImagePicker from "expo-image-picker";
 import React, { useEffect, useState } from "react";
-import { Platform, ScrollView, TouchableOpacity } from "react-native";
+import { Platform, TouchableOpacity } from "react-native";
 import Toast from "react-native-toast-message";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -20,9 +20,9 @@ import TitleComponent from "@/components/TitleComponent/TitleComponent";
 import { setUserData } from "@/reduxfile/redux/auth/slices";
 import { useUpdateProfileMutation } from "@/reduxfile/redux/updateProfile/service";
 import { RootState } from "@/store/store";
+import { windowWidth } from "@/utils/dimensions";
 
 import { UpdateProfile, UpdateProfileInitValues } from "./types/profileTypes";
-import { windowWidth } from "@/utils/dimensions";
 
 const PersonalDataScreen = ({ navigation }) => {
   const jobs = [
@@ -158,70 +158,64 @@ const PersonalDataScreen = ({ navigation }) => {
           handleBackPress={() => navigation.goBack()}
           title="Personal Data"
         />
-        <ScrollView
-          scrollEnabled={!selectCategory}
-          showsVerticalScrollIndicator={false}
-        >
-          <Box alignItems="center" justifyContent="center" marginTop="lg">
-            {image ? (
-              <Image
-                source={{ uri: image }}
-                style={{ borderRadius: 100, height: 100, width: 100 }}
-              />
-            ) : (
-              <Icon name="no_profile" size={95} />
-            )}
-            <TouchableOpacity
-              activeOpacity={0.6}
-              onPress={pickImage}
-              style={{
-                marginLeft: 60,
-                marginTop: -30,
-              }}
-            >
-              <Icon name="edit_photo" size={50} />
-            </TouchableOpacity>
-          </Box>
-          <Box marginTop="lg">
-            <EyeTextInput
-              labelText="Full name"
-              properties={{
-                onChangeText: (event: string) =>
-                  handleChange(event, "username"),
-                placeholder: `${username}`,
-                secureTextEntry: false,
-                value: values?.username,
-                variant: "subHeading",
-              }}
+        <Box alignItems="center" justifyContent="center" marginTop="lg">
+          {image ? (
+            <Image
+              source={{ uri: image }}
+              style={{ borderRadius: 100, height: 100, width: 100 }}
             />
-            <EyeTextInput
-              disableEdit={false}
-              labelText="Email address"
-              properties={{
-                placeholder: `${email}`,
-                secureTextEntry: false,
-                variant: "subHeading",
-              }}
-            />
-          </Box>
-          <DropDown
-            defaultSubheading="Choose preferred job title"
-            label="Job"
-            listItems={jobs}
-            selected={values?.job || job}
-            setSelected={(text: string) => handleChange(text, "job")}
+          ) : (
+            <Icon name="no_profile" size={95} />
+          )}
+          <TouchableOpacity
+            activeOpacity={0.6}
+            onPress={pickImage}
+            style={{
+              marginLeft: 60,
+              marginTop: -30,
+            }}
+          >
+            <Icon name="edit_photo" size={50} />
+          </TouchableOpacity>
+        </Box>
+        <Box marginTop="lg">
+          <EyeTextInput
+            labelText="Full name"
+            properties={{
+              onChangeText: (event: string) => handleChange(event, "username"),
+              placeholder: `${username}`,
+              secureTextEntry: false,
+              value: values?.username,
+              variant: "subHeading",
+            }}
           />
-          <Box height={70} />
-          <Button
-            disabled={isLoading}
-            isloading={isLoading}
-            label="Update"
-            loadingText="Updating profile..."
-            onPress={triggerUpdateProfile}
-            width={windowWidth * 0.85}
+          <EyeTextInput
+            disableEdit={false}
+            labelText="Email address"
+            properties={{
+              placeholder: `${email}`,
+              secureTextEntry: false,
+              variant: "subHeading",
+            }}
           />
-          <Toast />
-        </ScrollView>
+        </Box>
+        <DropDown
+          defaultSubheading="Choose preferred job title"
+          label="Job"
+          listItems={jobs}
+          selected={values?.job || job}
+          setSelected={(text: string) => handleChange(text, "job")}
+        />
+        <Box height={70} />
+        <Button
+          disabled={isLoading}
+          isloading={isLoading}
+          label="Update"
+          loadingText="Updating profile..."
+          onPress={triggerUpdateProfile}
+          width={windowWidth * 0.85}
+        />
+        <Toast />
       </Box>
     </BlurryBottomContainer>
   );
