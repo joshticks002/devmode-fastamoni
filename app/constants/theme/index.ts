@@ -24,7 +24,23 @@ export const palette = {
   yellow: "#F2C948",
 };
 
+export type PaletteType = keyof typeof palette;
+
 const theme = createTheme({
+  borderRadii: {
+    lg: wp(32),
+    md: wp(16),
+    none: 0,
+    sl: wp(20),
+    sm: wp(8),
+    smd: wp(6),
+    sml: wp(24),
+    smm: wp(10),
+    xl: wp(64),
+    xs: wp(4),
+    xxl: wp(100),
+  },
+
   breakpoints: {
     bigscreen: 412,
     phone: 0,
@@ -85,6 +101,13 @@ const theme = createTheme({
       fontSize: 24,
       fontWeight: "600",
       lineHeight: 40,
+    },
+    medium: {
+      color: "mainBackground",
+      fontFamily: "harmonia-sbd",
+      fontSize: 16,
+      fontWeight: "400",
+      lineHeight: 20,
     },
     subHeading: {
       color: "textColor",

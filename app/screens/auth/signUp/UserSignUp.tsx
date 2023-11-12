@@ -104,7 +104,7 @@ const UserSignUp = ({ navigation }) => {
           <Box
             alignSelf="center"
             backgroundColor="lightGrey"
-            borderRadius={7}
+            borderRadius="sm"
             borderWidth={0.5}
             height={70}
             marginBottom="sm"
@@ -127,7 +127,7 @@ const UserSignUp = ({ navigation }) => {
           <Box
             alignSelf="center"
             backgroundColor="lightGrey"
-            borderRadius={7}
+            borderRadius="sm"
             borderWidth={0.5}
             height={70}
             marginBottom="sm"

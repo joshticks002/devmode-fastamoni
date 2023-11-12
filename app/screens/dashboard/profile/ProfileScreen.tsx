@@ -87,7 +87,7 @@ const ProfileScreen = ({ navigation }: AppNavScreenProps<"DashboardTab">) => {
                 <Pressable
                   alignItems="center"
                   backgroundColor="primaryPurple"
-                  borderRadius={100}
+                  borderRadius="xxl"
                   height={60}
                   justifyContent="center"
                   marginVertical="md"

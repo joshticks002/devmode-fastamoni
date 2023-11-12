@@ -19,8 +19,8 @@ import TitleComponent from "@/components/TitleComponent/TitleComponent";
 import { useLoginMutation } from "@/reduxfile/redux/auth/service";
 import { setUserData } from "@/reduxfile/redux/auth/slices";
 import { RootState } from "@/store/store";
-import { capitalizeFirstLetter } from "@/utils/nameFormatter";
 import { windowWidth } from "@/utils/dimensions";
+import { capitalizeFirstLetter } from "@/utils/nameFormatter";
 
 type MyFormValues = {
   email: string;
@@ -256,7 +256,7 @@ const Login = ({ navigation }) => {
                 </Box>
                 <Box
                   alignItems="center"
-                  borderRadius={100}
+                  borderRadius="xxl"
                   justifyContent="center"
                   marginBottom="lg"
                 >
@@ -322,7 +322,10 @@ const Login = ({ navigation }) => {
         ) : (
           <Box marginTop="xxl" paddingHorizontal="md">
             <Box>
-              <TitleComponent handleBackPress={() => {}} title="Login" />
+              <TitleComponent
+                handleBackPress={() => navigation.goBack()}
+                title="Login"
+              />
             </Box>
             <Box
               alignItems="center"

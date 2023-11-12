@@ -119,7 +119,7 @@ const Info = (props: InfoProps) => {
               alignContent="stretch"
               alignItems="center"
               backgroundColor="black"
-              borderRadius={100}
+              borderRadius="xxl"
               flexDirection="row"
               height={43}
               justifyContent="center"

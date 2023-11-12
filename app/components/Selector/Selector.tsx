@@ -30,7 +30,7 @@ const Selector = (props: SelectorProps) => {
           <Pressable
             alignItems="center"
             backgroundColor={index === clicked ? "primary" : "white"}
-            borderRadius={10}
+            borderRadius="smm"
             flexDirection="row"
             height={80}
             justifyContent="center"

@@ -28,7 +28,7 @@ const RegistrationWelcomePage = ({ navigation }) => {
           <Pressable
             alignItems="center"
             backgroundColor="black"
-            borderRadius={6}
+            borderRadius="smd"
             flexDirection="row"
             justifyContent="center"
             marginRight="sm"

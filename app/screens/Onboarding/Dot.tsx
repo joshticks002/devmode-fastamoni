@@ -62,7 +62,7 @@ function Dot({ index, translateX }: DotProps) {
   return (
     <AnimatedBox
       animatedProps={animatedProps}
-      borderRadius={wp(4)}
+      borderRadius="xs"
       marginRight="md"
       style={[animatedStyle]}
     />

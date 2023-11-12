@@ -153,7 +153,7 @@ const PersonalDataScreen = ({ navigation }) => {
 
   return (
     <BlurryBottomContainer shades="bottomBlur">
-      <Box marginHorizontal="md" marginTop="Ml">
+      <Box flex={1} marginHorizontal="md" marginTop="Ml">
         <TitleComponent
           handleBackPress={() => navigation.goBack()}
           title="Personal Data"
@@ -207,14 +207,29 @@ const PersonalDataScreen = ({ navigation }) => {
           setSelected={(text: string) => handleChange(text, "job")}
         />
         <Box height={70} />
-        <Button
-          disabled={isLoading}
-          isloading={isLoading}
-          label="Update"
-          loadingText="Updating profile..."
-          onPress={triggerUpdateProfile}
-          width={windowWidth * 0.85}
-        />
+        <Box flex={1} position="relative">
+          <Box
+            alignItems="center"
+            bottom={0}
+            justifyContent="center"
+            left={0}
+            paddingBottom="sm"
+            paddingTop="xs"
+            paddingVertical="sm"
+            position="absolute"
+            right={0}
+          >
+            <Button
+              alignSelf="center"
+              disabled={isLoading}
+              isloading={isLoading}
+              label="Update"
+              loadingText="Updating profile..."
+              onPress={triggerUpdateProfile}
+              width={windowWidth * 0.85}
+            />
+          </Box>
+        </Box>
         <Toast />
       </Box>
     </BlurryBottomContainer>

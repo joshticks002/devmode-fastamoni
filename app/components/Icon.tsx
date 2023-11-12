@@ -54,6 +54,7 @@ import right_arrow from "@/assets/svg/right_arrow.svg";
 import right_chevron from "@/assets/svg/right_chevron.svg";
 import selectContact from "@/assets/svg/selectContact.svg";
 import sentIcon from "@/assets/svg/sentIcon.svg";
+import success from "@/assets/svg/success.svg";
 import success_smiley from "@/assets/svg/success_smiley.svg";
 import support from "@/assets/svg/support.svg";
 import tick from "@/assets/svg/tick.svg";
@@ -118,6 +119,7 @@ export const ICONS = {
   right_chevron,
   selectContact,
   sentIcon,
+  success,
   success_smiley,
   support,
   tick,

@@ -114,6 +114,7 @@ export type ButtonProps = PressableProps &amp; {
   label: string;
   loadingText?: string;
   variant?: "primary" | "secondary";
+  width?: number | string;
 };
 
 /**
@@ -128,6 +129,7 @@ function Button({
   loadingText,
   variant = "primary",
   onPress,
+  width = 360,
   ...rest
 }: ButtonProps) {
   const { spacing } = useTheme();
@@ -140,13 +142,13 @@ function Button({
   return (
     &lt;Pressable
       alignSelf="center"
-      backgroundColor={variant === "primary" ? "black" : "transparent"}
-      borderRadius={6}
+      backgroundColor={variant === "primary" ? "primaryPurple" : "yellow"}
+      borderRadius="smd"
       justifyContent="center"
       onPress={handlePress}
       padding="md"
       type="scale"
-      width={360}
+      width={width}
     >
       {isloading ? (
         &lt;AnimatedBox

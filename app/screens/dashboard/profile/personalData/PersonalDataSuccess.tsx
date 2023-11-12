@@ -10,6 +10,7 @@ const PersonalDataSuccess = ({ navigation }) => {
       navigation.navigate("ProfileScreen");
     }, 2000);
   }, []);
+
   return (
     <BlurryBottomContainer shades="bottomBlur">
       <Box
@@ -20,7 +21,7 @@ const PersonalDataSuccess = ({ navigation }) => {
         paddingHorizontal="md"
       >
         <Box marginBottom="md">
-          <Icon name="check" size={100} />
+          <Icon name="success" size={84} />
         </Box>
         <Text marginHorizontal="Ml" textAlign="center" variant="header">
           Update Complete

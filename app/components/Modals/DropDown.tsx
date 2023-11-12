@@ -41,7 +41,7 @@ const DropDown = (props: ListItems) => {
             alignItems="center"
             alignSelf="center"
             backgroundColor="lightGrey"
-            borderRadius={7}
+            borderRadius="sm"
             borderWidth={0.5}
             flexDirection="row"
             height={70}
@@ -65,7 +65,7 @@ const DropDown = (props: ListItems) => {
           <Box
             alignSelf="center"
             backgroundColor="white"
-            borderRadius={20}
+            borderRadius="sl"
             height={200}
             marginBottom={selectCategory ? "md" : undefined}
             paddingVertical="xs"
@@ -76,7 +76,7 @@ const DropDown = (props: ListItems) => {
               {listItems.map((value, type) => (
                 <Pressable
                   backgroundColor="mainBackground"
-                  borderRadius={40}
+                  borderRadius="lg"
                   key={type}
                   marginHorizontal="md"
                   onPress={() => {

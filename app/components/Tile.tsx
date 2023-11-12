@@ -17,7 +17,7 @@ const Tile = (props: TileProps) => {
     <Pressable
       alignItems="center"
       backgroundColor="lightGrey"
-      borderRadius={100}
+      borderRadius="xxl"
       marginVertical="sm"
       onPress={onProceed}
       padding="md"

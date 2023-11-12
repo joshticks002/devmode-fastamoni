@@ -52,7 +52,7 @@ function Button({
     <Pressable
       alignSelf="center"
       backgroundColor={variant === "primary" ? "primaryPurple" : "yellow"}
-      borderRadius={6}
+      borderRadius="smd"
       justifyContent="center"
       onPress={handlePress}
       padding="md"

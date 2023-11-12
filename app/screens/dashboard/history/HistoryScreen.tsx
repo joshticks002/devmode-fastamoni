@@ -32,7 +32,7 @@ const HistoryScreen = ({ navigation }) => {
           handleBackPress={() => navigation.goBack()}
           title="Transaction History"
         />
-        <Box backgroundColor="white" borderRadius={20} height="90%">
+        <Box backgroundColor="white" borderRadius="sl" height="90%">
           <ScrollView
             onScroll={({ nativeEvent }) => {
               const {

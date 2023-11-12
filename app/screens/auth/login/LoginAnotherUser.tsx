@@ -17,8 +17,8 @@ import TextInput from "@/components/TextInput";
 import TitleComponent from "@/components/TitleComponent/TitleComponent";
 import { useLoginMutation } from "@/reduxfile/redux/auth/service";
 import { setUserData } from "@/reduxfile/redux/auth/slices";
-import { capitalizeFirstLetter } from "@/utils/nameFormatter";
 import { windowWidth } from "@/utils/dimensions";
+import { capitalizeFirstLetter } from "@/utils/nameFormatter";
 
 type MyFormValues = {
   email: string;
@@ -131,12 +131,12 @@ const LoginOtherAccounts = ({ navigation }) => {
           </Box>
           <Box
             alignItems="center"
-            borderRadius={100}
+            borderRadius="xxl"
             justifyContent="center"
             marginBottom="Ml"
           >
             <Image
-              borderRadius={100}
+              borderRadius="xxl"
               height={125}
               source={loginimg}
               width={125}
@@ -145,7 +145,7 @@ const LoginOtherAccounts = ({ navigation }) => {
           <Box
             alignSelf="center"
             backgroundColor="lightGrey"
-            borderRadius={7}
+            borderRadius="smd"
             borderWidth={0.5}
             height={70}
             marginBottom="sm"

@@ -16,6 +16,7 @@ import RegistrationWelcomePage from "@/screens/auth/signUp/RegistrationWelcomePa
 import UserSignUp from "@/screens/auth/signUp/UserSignUp";
 import PersonalDataScreen from "@/screens/dashboard/profile/personalData/PersonalDataScreen";
 import PersonalDataSuccess from "@/screens/dashboard/profile/personalData/PersonalDataSuccess";
+import { ChangePassword } from "@/screens/dashboard/settings/ChangePassword";
 import { RootState } from "@/store/store";
 
 import DashboardTab from "./DashboardTab";
@@ -35,6 +36,7 @@ function AuthenticatedStack() {
       }}
     >
       <Stack.Screen component={DashboardTab} name="DashboardTab" />
+      <Stack.Screen component={ChangePassword} name="ChangePassword" />
       <Stack.Screen component={EmailSentScreen} name="EmailSentScreen" />
       <Stack.Screen component={PersonalDataScreen} name="PersonalDataScreen" />
       <Stack.Screen

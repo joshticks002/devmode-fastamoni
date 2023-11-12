@@ -14,14 +14,15 @@ const SettingsScreen = ({ navigation }) => (
 
       <Tile
         icon="right_arrow"
-        onProceed={() => {}}
-        text="Set transaction PIN"
+        onProceed={() => navigation.navigate("ChangePassword")}
+        text="Change Account Password"
       />
       <Tile
         icon="right_arrow"
         onProceed={() => {}}
-        text="Change Account Password"
+        text="Set transaction PIN"
       />
+
       <Tile icon="right_arrow" onProceed={() => {}} text="Set Account Limit" />
       <Tile
         icon="right_arrow"

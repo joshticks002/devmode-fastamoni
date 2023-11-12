@@ -21,7 +21,7 @@ const TransactionContent = (props: ContentProps) => {
   return (
     <Box
       alignItems="center"
-      borderRadius={8}
+      borderRadius="sm"
       flexDirection="row"
       justifyContent="space-between"
       paddingVertical="sm"

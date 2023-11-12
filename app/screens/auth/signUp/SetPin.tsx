@@ -84,7 +84,7 @@ const SetPin = ({ navigation, route }) => {
               <Box
                 alignItems="center"
                 borderColor="blockBg"
-                borderRadius={8}
+                borderRadius="sm"
                 borderWidth={1}
                 height={70}
                 justifyContent="center"
@@ -108,7 +108,7 @@ const SetPin = ({ navigation, route }) => {
               <Box
                 alignItems="center"
                 borderColor="blockBg"
-                borderRadius={8}
+                borderRadius="sm"
                 borderWidth={1}
                 height={70}
                 justifyContent="center"
@@ -134,7 +134,7 @@ const SetPin = ({ navigation, route }) => {
               <Box
                 alignItems="center"
                 borderColor="blockBg"
-                borderRadius={8}
+                borderRadius="sm"
                 borderWidth={1}
                 height={70}
                 justifyContent="center"
@@ -160,7 +160,7 @@ const SetPin = ({ navigation, route }) => {
               <Box
                 alignItems="center"
                 borderColor="blockBg"
-                borderRadius={8}
+                borderRadius="sm"
                 borderWidth={1}
                 height={70}
                 justifyContent="center"
@@ -194,7 +194,7 @@ const SetPin = ({ navigation, route }) => {
               <Box
                 alignItems="center"
                 borderColor="blockBg"
-                borderRadius={8}
+                borderRadius="sm"
                 borderWidth={1}
                 height={70}
                 justifyContent="center"
@@ -218,7 +218,7 @@ const SetPin = ({ navigation, route }) => {
               <Box
                 alignItems="center"
                 borderColor="blockBg"
-                borderRadius={8}
+                borderRadius="sm"
                 borderWidth={1}
                 height={70}
                 justifyContent="center"
@@ -242,7 +242,7 @@ const SetPin = ({ navigation, route }) => {
               <Box
                 alignItems="center"
                 borderColor="blockBg"
-                borderRadius={8}
+                borderRadius="sm"
                 borderWidth={1}
                 height={70}
                 justifyContent="center"
@@ -266,7 +266,7 @@ const SetPin = ({ navigation, route }) => {
               <Box
                 alignItems="center"
                 borderColor="blockBg"
-                borderRadius={8}
+                borderRadius="sm"
                 borderWidth={1}
                 height={70}
                 justifyContent="center"

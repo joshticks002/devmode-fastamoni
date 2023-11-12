@@ -22,7 +22,7 @@ const TileContent = (props: TileContentProps) => {
   return (
     <Pressable
       backgroundColor="white"
-      borderRadius={20}
+      borderRadius="sl"
       marginBottom="md"
       onPress={onProceed}
       paddingHorizontal="lg"

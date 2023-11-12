@@ -49,7 +49,7 @@ const TotalCard = (props: TotalCardProps) => {
       {defaultView === "showDefault" && (
         <Box
           backgroundColor="white"
-          borderRadius={8}
+          borderRadius="sm"
           paddingHorizontal="sm"
           paddingVertical="md"
           style={{
@@ -102,7 +102,7 @@ const TotalCard = (props: TotalCardProps) => {
       {defaultView === "showAirtimeCheckout" && (
         <Box
           backgroundColor="white"
-          borderRadius={8}
+          borderRadius="sm"
           paddingHorizontal="sm"
           paddingVertical="md"
           style={{
@@ -159,7 +159,7 @@ const TotalCard = (props: TotalCardProps) => {
       {defaultView === "showDataCheckout" && (
         <Box
           backgroundColor="white"
-          borderRadius={8}
+          borderRadius="sm"
           paddingHorizontal="sm"
           paddingVertical="md"
           style={{
@@ -226,7 +226,7 @@ const TotalCard = (props: TotalCardProps) => {
       {defaultView === "checkoutElectricity" && (
         <Box
           backgroundColor="white"
-          borderRadius={8}
+          borderRadius="sm"
           paddingHorizontal="sm"
           paddingVertical="md"
           style={{
@@ -305,7 +305,7 @@ const TotalCard = (props: TotalCardProps) => {
       {defaultView === "CheckoutCableTv" && (
         <Box
           backgroundColor="white"
-          borderRadius={8}
+          borderRadius="sm"
           paddingHorizontal="sm"
           paddingVertical="md"
           style={{

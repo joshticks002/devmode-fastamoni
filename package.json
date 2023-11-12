@@ -31,6 +31,7 @@
     "expo-updates": "~0.16.4",
     "i18next": "^22.5.0",
     "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
     "lottie-react-native": "5.1.4",
     "numeral": "^2.0.6",
     "react": "18.2.0",

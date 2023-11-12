@@ -20,7 +20,7 @@ const CopyToClipboard = (props: ListItems) => {
       <Box
         alignItems="center"
         backgroundColor="lightGrey"
-        borderRadius={100}
+        borderRadius="xxl"
         flexDirection="row"
         height={70}
         justifyContent="space-between"

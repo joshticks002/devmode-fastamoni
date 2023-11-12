@@ -31,6 +31,7 @@ export type AppNavRoutes = {
   TermsOfService: undefined;
   // Change PIN
   ChangePin: undefined;
+  ChangePassword: undefined;
   // New PIN
   NewPin: {
     changePin: string;

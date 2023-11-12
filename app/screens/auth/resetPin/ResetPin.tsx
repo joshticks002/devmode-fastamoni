@@ -38,7 +38,7 @@ const ResetPin = ({ navigation }) => {
           <Box
             alignSelf="center"
             backgroundColor="lightGrey"
-            borderRadius={7}
+            borderRadius="smd"
             borderWidth={0.3}
             height={70}
             marginTop="md"

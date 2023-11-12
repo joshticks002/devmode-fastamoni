@@ -26,12 +26,12 @@ import { windowWidth } from "@/utils/dimensions";
 import { FrequentTransactionList } from "./component/FrequentTransactionList";
 import { freePosters, frequentTransactionList, images } from "./data/data";
 
-const wait = (timeout: number) =>
+export const wait = (timeout: number) =>
   new Promise((resolve) => setTimeout(resolve, timeout));
 
 function renderItem({ item, index }: CarouselRenderItemInfo<any>) {
   return (
-    <Box borderRadius={8} key={index} overflow="hidden" width="100%">
+    <Box borderRadius="sm" key={index} overflow="hidden" width="100%">
       <Image
         alt="new images"
         source={item.image}

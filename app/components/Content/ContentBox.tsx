@@ -23,7 +23,7 @@ const ContentBox = (props: ContentProps) => {
       <Box
         alignItems="center"
         backgroundColor="white"
-        borderRadius={8}
+        borderRadius="sm"
         height={140}
         justifyContent="center"
         style={{
